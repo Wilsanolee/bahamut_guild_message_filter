@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="                    width:300px;">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>巴哈公會文章篩選器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h2>巴哈公會文章篩選器 1.0.0</h2>
+    <hr>
+    <h3>篩選文章</h3>
+    <h4>(對插件右鍵點選"選項"進行設定)</h4>
+    <input id="readmore" value="看更多" style="width:120px;height:40px;border:3px red double;"
+
+type="button"> <input id="filter" value="篩選文章" style="width:120px;height:40px;border:2px black solid;"
+
+type="button"><br>
+    <br>
+    <input id="autoClosePic" name="autoClosePic" value="autoClosePic" type="checkbox">
+    <label>自動關圖</label> <input id="filter_type_forbidden" name="filter_type_forbidden"
+
+      value="filter_type_forbidden" type="checkbox"> <label>過濾內文</label><br>
+    <br>
+    <input name="filter_type" id="filter_type_search" type="radio">搜尋特定ID <input
+
+      name="filter_type" id="filter_type_black" type="radio">排除黑名單ID <input name="filter_type"
+
+      id="filter_type_none" type="radio">關閉
+    <hr>
+    <h3>便捷工具</h3>
+    <input id="good" value="推全部文章" style="width:120px;height:40px;border:2px blue dashed;"
+
+type="button"> <input id="bad" value="噓全部文章" style="width:120px;height:40px;border:2px red dashed;"
+
+type="button"> <br>
+    <br>
+    <input id="hide_intro" name="hide_intro" value="hide_intro" type="checkbox">
+    <label>隱藏公會介紹</label><br>
+    <br>
+    <input id="hide_announcement" name="hide_announcement" value="hide_announcement"
+
+      type="checkbox"> <label>隱藏公告</label> <br>
+    <br>
+    <input id="hide_management" name="hide_management" value="hide_management" type="checkbox"><label>
+      隱藏幹部列表</label>
+    <script src="popup.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=Big5">
+    <title>Extension Options</title>
+  </head>
+  <body> <input id="checkbox_searchMode" name="group_1" type="radio">
+    <label>搜尋名單</label> <input id="checkbox_blackMode" name="group_1" type="radio">
+    <label>黑名單</label> <input id="checkbox_forbiddenWordsMode" name="group_1" type="radio">
+    <label>過濾關鍵字</label><br>
+    <br>
+    <form id="input"> 輸入 : <input id="message" type="text"> </form>
+    <div id="status"></div>
+    <br>
+    <button id="addToList">加入至名單</button> <button id="clear_input">清除輸入</button>
+    <button id="delete_last">移除最下面的元素</button> <button id="clear_records">清除該選項紀錄</button>
+    <script src="options.js"></script> <br>
+    <h2>【搜尋名單】(帳號)</h2>
+    <div id="search_accounts"></div>
+    <hr>
+    <h2>【黑名單】(帳號)</h2>
+    <div id="black_accounts"></div>
+    <hr>
+    <h2>【過濾內文】(任意字串)</h2>
+    <div id="forbidden_words"></div>
+  </body>
+</html>

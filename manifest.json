@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "巴哈公會文章篩選器",
+	"description": "快速篩選特定使用者的發文，以及其他功能",
+	"version": "1.0.1",
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"options_page": "options.html",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://guild.gamer.com.tw/guild.php?sn=*"
+			],
+			"js": [
+				"execute.js"
+			]
+		}
+	]
+}
